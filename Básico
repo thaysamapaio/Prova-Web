@@ -1,0 +1,106 @@
+Básico
+
+let nome = 'Pedro'
+let numero = 20
+let bool = true //ou false
+
+console.log(numero)
+
+---------------------------------------------
+Conversao de dados
+
+console.log('ano'+ 2025)
+console.log('3'+'5') //35
+
+//conversão explícita
+console.log(parseInt('3')+parseInt('5')) //8
+console.log(parseFloat('3.5')+parseInt('5'))
+
+//conversão implícita
+console.log('10'/'2') //5
+
+let cliente = 'Maria'
+let maiorDeIdade = true
+let saldo = 100
+console.log(typeof cliente) //string
+console.log(typeof saldo) //number
+console.log(typeof maiorDeIdade) //boolean
+
+cliente = 'Rafael'
+console.log(cliente)
+
+const nome = 'Luis' //é uma variável q nn pode ter seu valor alterado
+//nome= 'João'
+----------------------------------------------------------------------------
+Operadores
+
+let soma =10 + 20
+let sub= 20-10
+let div= 20/2
+let mult=10*2
+let poten=10**2
+
+console.log('Soma: ', soma)
+console.log('Subtração: ', sub)
+console.log('Divisão: ', div)
+console.log('Multiplicação: ', mult)
+console.log('Potência: ', poten)
+--------------------------------------------------------
+Condição
+
+const idade=18
+const carteiraHabilitacao = true
+
+//if (idade >=18 || carteiraHabilitacao){
+//    console.log("Pode dirigir")
+//}
+
+
+
+if (idade===18){ // o '===' se refere a ser do mesmo tipo
+    console.log('Maior de idade')
+}else{
+    console.log('Menor de idade')
+}
+--------------------------------------------------------------
+Função
+
+//são blocos reutilizáveis
+//podem ser com parâmetros, retorno ou sem retorno
+
+let numero1 = 4
+let numero2= 5
+function calculoSoma (a,b) { // 'a' e 'b' são parâmetros
+    let resultado = a + b 
+    return resultado 
+}
+console.log(calculoSoma(numero1, numero2))
+console.log(calculoSoma(10,10))
+
+
+//funcaao sem retorno
+let idade =18
+function maiorDeIdade () {
+    if (idade>=18){ 
+        console.log('Maior de idade')
+    }else{
+        console.log('Menor de idade')
+    }
+}
+
+
+//função com retorno
+let p1= 2
+let p2= 3
+function funcao (p1,p2) {
+    return p1*p2
+} 
+
+console.log(funcao(10,2))
+
+
+//funções declarativas
+
+function saudacao (){
+    console.log('Olá, mundo')
+} 
